@@ -13,7 +13,7 @@ class DummyModule:
 class OverrideBackendTestCase(TestCase):
     @patch('requests.post')
     def test_runcmd(self, mock_post):
-        ret = notify('message', 'title', {
+        ret = notify('message', 'title', config={
             'backends': ['foobar'],
             'foobar': {
                 'backend': 'pushover',
