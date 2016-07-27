@@ -57,7 +57,7 @@ setup(
 
     extras_require=extra_deps,
 
-    tests_require=test_deps,
+    tests_require=test_deps+deps,
     test_suite='tests',
 
     entry_points={
